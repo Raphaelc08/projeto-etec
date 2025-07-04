@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="telaLogin.css">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
   <!--Importando Font Awesome para logos-->
@@ -153,59 +153,6 @@
     </div>
     <p class="footer-autoral">Step Over - Tecnologia em roupas</p>
   </footer>
-    <script>
-    function abrirCarrinho() {
-      document.getElementById('carrinho').classList.add('aberto');
-      document.getElementById('overlay').classList.add('visivel');
-    }
-
-    function fecharCarrinho() {
-
-      document.getElementById('carrinho').classList.remove('aberto');
-      document.getElementById('overlay').classList.remove('visivel');
-
-    }
-    //Script da nav produtos
-
-    function abrirProdutos() {
-      document.getElementById('produtos-nav').classList.add('aberto');
-      document.getElementById('overlayprod').classList.add('visivel');
-    }
-    function fecharProdutos() {
-      document.getElementById('produtos-nav').classList.remove('aberto');
-      document.getElementById('overlayprod').classList.remove('visivel');
-    }
-
-
-// pega e adiciona o ativo
-  
-document.querySelector('.search-toggle').addEventListener('click', function(e) {
-  e.preventDefault();
-  const searchInput = document.querySelector('.search-input');
-  searchInput.classList.toggle('ativo');
-  
-  // Foca no input quando ativado
-  if(searchInput.classList.contains('ativo')) {
-    searchInput.focus();
-  }
-});
-
-// Fechar ao clicar fora
-document.addEventListener('click', function(e) {
-  const searchBox = document.querySelector('.search-box');
-  const searchInput = document.querySelector('.search-input');
-  
-  if(!searchBox.contains(e.target)) {
-    searchInput.classList.remove('ativo');
-  }
-});
-
-// Fechar ao pressionar ESC
-document.addEventListener('keyup', function(e) {
-  if(e.key === 'Escape') {
-    document.querySelector('.search-input').classList.remove('ativo');
-  }
-});
-    </script>
+    <script src="../JS/framework.js"></script>
 </body>
 </html>

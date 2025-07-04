@@ -4,7 +4,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="paginaPrinc.css">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
   <!--Importando Font Awesome para logos-->
@@ -217,68 +217,7 @@
     </div>
     <p class="footer-autoral">Kicks Company - Tecnologia em roupas</p>
   </footer>
-
-  <script>
-
-    //script do carrinho
-
-
-    // Adicionar classes para visivel e fechado (Carrinho)
-    function abrirCarrinho() {
-      document.getElementById('carrinho').classList.add('aberto');
-      document.getElementById('overlay').classList.add('visivel');
-    }
-
-    function fecharCarrinho() {
-
-      document.getElementById('carrinho').classList.remove('aberto');
-      document.getElementById('overlay').classList.remove('visivel');
-    }
-    //Script da nav produtos
-
-    function abrirProdutos() {
-      document.getElementById('produtos-nav').classList.add('aberto');
-      document.getElementById('overlayprod').classList.add('visivel');
-    }
-
-    function fecharProdutos() {
-      document.getElementById('produtos-nav').classList.remove('aberto');
-      document.getElementById('overlayprod').classList.remove('visivel');
-    }
-
-
-document.getElementById('produtos-nav1').addEventListener('click', function(e) {
-  e.preventDefault(); 
-  abrirProdutos();    
-});
-    
-
-    document.querySelector('.search-toggle').addEventListener('click', function (f) {
-    f.preventDefault();
-      const searchInput = document.querySelector('.search-input');
-      searchInput.classList.toggle('ativo');
-
-      // Foca no input quando ativado
-      if (searchInput.classList.contains('ativo')) {
-        searchInput.focus();
-      }
-    });
-
-    // Fechar ao clicar fora
-   
-
-    // Fechar ao pressionar ESC
-    document.addEventListener('keyup', function (esc) {
-      if (esc.key === 'Escape') {
-        document.querySelector('.search-input').classList.remove('ativo');
-        document.getElementById('carrinho').classList.remove('aberto');
-        document.getElementById('overlay').classList.remove('visivel');
-              document.getElementById('produtos-nav').classList.remove('aberto');
-      document.getElementById('overlayprod').classList.remove('visivel');
-      }
-    });
-
-  </script>
+  <script src="../JS/framework.js"></script>
   
 </body>
 
