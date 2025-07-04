@@ -1,0 +1,22 @@
+<header id="header">
+    <div class="nav-left">
+      <ul>
+        <li class="dropdown">
+          <a href="#" id="produtos-nav1" onclick="abrirProdutos()">Produtos</a>
+        </li>
+        <li class="suport">
+          <a href="#" id="suporte">Suporte</a>
+        </li>
+      </ul>
+    </div>
+    <div class="logo" id="nav-center">
+      <a href="#" id="h1head" class="logo">Step Over</a>
+    </div>
+     document.addEventListener('click', function (e) {
+      const searchBox = document.querySelector('.search-box');
+      const searchInput = document.querySelector('.search-input');
+
+      if (!searchBox.contains(e.target)) {
+        searchInput.classList.remove('ativo');
+      }
+    });
