@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <!--Importando Font Awesome para logos-->
+  <title>Kicks Company</title>
+
+</head>
+
+<body>
+
+ <header id="header">
+    <div class="nav-left">
+      <ul>
+        <li class="dropdown">
+          <a href="#" id="produtos-nav1" onclick="abrirProdutos()">Produtos</a>
+        </li>
+      </ul>
+    </div>
+    <div class="logo" id="nav-center">
+      <a href="../PaginaPrinc/indexpaginaprinc.html" id="h1head" class="logo"><img src="/imagens/Cópia de kicks.svg" alt=""></a>
+    </div>
+
+    <div class="nav-right">
+      <ul>
+        <li class="search-container">
+          <div class="search-box">
+            <a href="#" class="search-toggle"><i class="fas fa-search"></i></a>
+            <input type="text" class="search-input" placeholder="Pesquisar...">
+          </div>
+        </li>
+        <li>
+            <a href="../MinhaConta/minhaconta.html"><i class="fas fa-user"></i></a>
+          </li>
+        <li>
+          <a href="#" id="abrircar" onclick="abrirCarrinho()"><i class="fas fa-shopping-cart"></i></a>
+        </li>
+      </ul>
+    </div>
+  </header>
+
+
+
+  <!-- Carrinho -->
+
+
+  <section id="carrinho" class="carrinho">
+    <button class="fecharcarrinho" onclick="fecharCarrinho()">✖</button>
+    <h2>Carrinho</h2>
+
+    <button id="button-finalizarCarrinho">Finalizar pedido</button>
+  </section>
+  <div id="overlay" class="overlay" onclick="fecharCarrinho()"></div>
+
+  <!-- Produtos nav aberta-->
+
+  <section id="produtos-nav" class="produtos-navv">
+    <button class="fecharprodutos" onclick="fecharProdutos()">✖</button>
+    <h2>Produtos</h2>
+    <hr>
+    </hr>
+    <div class="menu-esquerda">
+      <p id="col-title">Lançamento Coleções</p>
+      <ul>
+        <li><a href="">Coleção</a>
+        </li>
+        <li><a href="">Coleção</a>
+        </li>
+        <li><a href="">Coleção</a>
+        </li>
+      </ul>
+
+      <p id="camisa-title">Camisetas</p>
+      <ul>
+        <li>
+          <a href="">Oversized</a>
+        </li>
+        <li>
+          <a href="">Slim
+          </a>
+        </li>
+        <li>
+          <a href="">Camiseta 3</a>
+        </li>
+      </ul>
+      <p id="calca-title">Calças</p>
+      <ul>
+        <li><a href="">Baggy</a>
+        </li>
+      </ul>
+      <a href="" id="moletom-nav">Moletom</a>
+
+      <a href="" id="bermuda-nav">Bermudas</a>
+    </div>
+  </section>
+
+  <div id="overlayprodutos" class="overlayprod" onclick="fecharProdutos()"></div>
+
+
+  <div class="containerr">
+
+<div class="coluna-esquerda">
+  <div onclick="toggleAccordion()" style="cursor : pointer;">
+    <div class="section-formularios">
+      <div id="title-dados">
+        <h1>Meus Dados</h1>
+        <p id="p-dados">Mantenha seus dados atualizados</p>
+      </div>
+    </div>
+  </div>
+
+  <div id="accordion-content" style="display: none;">
+    <div class="formularios">
+      <div class="form-nome">
+        <label>Nome*</label>
+        <br>
+        <input type="text" value="Nome do cliente" disabled>
+      </div>
+      <div class="form-sobrenome">
+        <label id="label-sobrenome">Sobrenome*</label>
+        <br>
+        <input type="text" value="Sobrenome do cliente" disabled>
+      </div>
+      <div class="form-email">
+        <label>Email*</label>
+        <br>
+        <input type="email" value="Email do cliente" disabled>
+      </div>
+    </div>
+    <div class="section-formularioss">
+      <div id="title-senha">
+        <h2 id="senha">Alterar Senha</h2>
+      </div>
+      <div class="form-group">
+        <form action="">
+          <label for="pass">Senha atual:</label>
+          <br>
+          <input type="password" id="pass">
+          <div>
+            <label for="newpass">Nova senha:</label>
+          </div>
+          <input type="password" id="newpass">
+          <div>
+            <label for="newpass1">Confirmar nova senha:</label>
+          </div>
+          <input type="password" name="novasenha">
+          <br>
+          <button type="submit">Registrar senha</button>
+        </form>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<div class="coluna-direita">
+    <div class="section-dados">
+      <div id="title-pedidos">
+        <h2>Meus Pedidos</h2>
+        <p id="p-pedidos">Veja a condição de seus pedidos</p>
+      </div>
+        <div class="orders-section">
+            <div class="order-card">
+              <img src="../imagens/produto1img.png" class="order-image" alt="Vestuário">
+              <h3>Nome do vestuário</h3>
+              <p>Situação: <strong>Entregue</strong></p>
+              <p>Preço: R$ 199,90</p>
+              <a href="#">Link transportadora</a>
+              </div>
+
+          </div>
+</div>
+
+<form class="form-produto">
+      <div class="avaliacao-produto">
+        <h3>Avaliação do Vestuário</h3>
+        <label for="fileInput" class="custom-file">
+          Selecionar arquivo
+          <input type="file" accept="image/png, image/jpeg" id="fileInput"  name="imagemprod" hidden>
+          </label>
+          <span id="fileName">Nenhum arquivo selecionado</span>
+          <textarea placeholder="Descrição..." rows="3" style="width: 100%;"></textarea>
+          <button type="submit">Enviar</button>
+
+      </div>
+         </form>     
+</div>
+</div>
+
+
+      <!-- Footer -->
+
+ <footer class="footer">
+  <div class="footer-container">
+    <!-- Coluna 1: Atendimento e Newsletter -->
+    <div class="footer-column-left">
+      <p><strong>Atendimento</strong></p>
+      <hr />
+      <p><strong>Newsletter</strong></p>
+      <form class="newsletter-form">
+        <input type="email" placeholder="E-mail" />
+        <button type="submit">→</button>
+      </form>
+    </div>
+
+    <!-- Coluna 2: Logo e Instagram -->
+    <div class="footer-column-center">
+      <h1 class="logo2">Kicks Company</h1>
+      <a href="#" class="insta-icon"><i class="fab fa-instagram"></i></a>
+      <p class="footer-autoral">Kicks Company - Tecnologia em roupas</p>
+    </div>
+
+    <!-- Coluna 3: Informações -->
+    <div class="footer-column-right">
+      <p><strong>Kicks Company, AUTORAL © 2025</strong></p>
+      <p>CNPJ: XX.XXX.XXX/XXXX-XX</p>
+      <p><strong>São Paulo - SP</strong></p>
+    </div>
+  </div>
+
+  
+</footer>
+
+      <script>
+
+      
+function toggleAccordion() {
+  const content = document.getElementById("accordion-content");
+  
+  if (content.style.display === "none") {
+    content.style.display = "block";
+  } else {
+    content.style.display = "none";
+  }
+
+  content.classList.toggle("aberto");
+  const content2 = document.getElementsByClassName("coluna-esquerda");
+  content2.classList.toggle("aberto");
+}
+
+
+        // Adicionar classes para visivel e fechado (Carrinho)
+        function abrirCarrinho() {
+          document.getElementById('carrinho').classList.add('aberto');
+          document.getElementById('overlay').classList.add('visivel');
+        }
+
+        function fecharCarrinho() {
+
+          document.getElementById('carrinho').classList.remove('aberto');
+          document.getElementById('overlay').classList.remove('visivel');
+
+        }
+        //Script da nav produtos
+
+        function abrirProdutos() {
+          document.getElementById('produtos-nav').classList.add('aberto');
+          document.getElementById('overlayprod').classList.add('visivel');
+        }
+        function fecharProdutos() {
+          document.getElementById('produtos-nav').classList.remove('aberto');
+          document.getElementById('overlayprod').classList.remove('visivel');
+        }
+
+
+        // pega e adiciona o ativo
+
+        document.querySelector('.search-toggle').addEventListener('click', function (e) {
+          e.preventDefault();
+          const searchInput = document.querySelector('.search-input');
+          searchInput.classList.toggle('ativo');
+
+          // Foca no input quando ativado
+          if (searchInput.classList.contains('ativo')) {
+            searchInput.focus();
+          }
+        });
+
+        // Fechar ao clicar fora
+        document.addEventListener('click', function (e) {
+          const searchBox = document.querySelector('.search-box');
+          const searchInput = document.querySelector('.search-input');
+
+          if (!searchBox.contains(e.target)) {
+            searchInput.classList.remove('ativo');
+          }
+        });
+
+        // Fechar ao pressionar ESC
+        document.addEventListener('keyup', function (e) {
+          if (e.key === 'Escape') {
+            document.querySelector('.search-input').classList.remove('ativo');
+          }
+        });
+
+//Estilização do input do tipo arquivo
+
+  const input = document.getElementById('fileInput');
+  const fileName = document.getElementById('fileName');
+
+  input.addEventListener('change', function() {
+    if (this.files.length > 0) {
+      fileName.innerHTML = this.files[0].name;
+    } else {
+      fileName.innerHTML = 'Nenhum arquivo selecionado';
+    }
+  });
+
+      </script>
+</body>
+</html>

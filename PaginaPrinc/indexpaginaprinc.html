@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <!--Importando Font Awesome para logos-->
+
+  <title>Kicks Company</title>
+  
+</head>
+
+<body>
+
+  <header id="header">
+    <div class="nav-left">
+      <ul>
+        <li class="dropdown">
+          <a href="#" id="produtos-nav1">Produtos</a>
+        </li>
+      </ul>
+    </div>
+    <div class="logo" id="nav-center">
+      <a href="../PaginaPrinc/indexpaginaprinc.html" id="h1head" class="logo"><img src="../imagens/Cópia de kicks.svg" alt=""></a>
+    </div>
+
+    <div class="nav-right">
+      <ul>
+        <li class="search-container">
+          <div class="search-box">
+            <a href="#" class="search-toggle"><i class="fas fa-search"></i></a>
+            <input type="text" class="search-input" placeholder="Pesquisar...">
+          </div>
+        </li>
+        <li>
+            <a href="../MinhaConta/minhaconta.html"><i class="fas fa-user"></i></a>
+          </li>
+        <li>
+          <a href="#" id="abrircar" onclick="abrirCarrinho()"><i class="fas fa-shopping-cart"></i></a>
+        </li>
+      </ul>
+    </div>
+  </header>
+
+  <!-- Carrinho -->
+
+
+  <section id="carrinho" class="carrinho">
+    <button class="fecharcarrinho" onclick="fecharCarrinho()">✖</button>
+    <h2>Carrinho</h2>
+
+    <button id="button-finalizarCarrinho">Finalizar pedido</button>
+  </section>
+  <div id="overlay" class="overlay" onclick="fecharCarrinho()"></div>
+
+  <!-- Produtos nav aberta-->
+
+  <section id="produtos-nav" class="produtos-navv">
+    <button class="fecharprodutos" onclick="fecharProdutos()">✖</button>
+    <h2>Produtos</h2>
+    <hr>
+    </hr>
+    <div class="menu-esquerda">
+      <p id="col-title">Lançamento Coleções</p>
+      <ul>
+        <li><a href="">Coleção</a>
+        </li>
+        <li><a href="">Coleção</a>
+        </li>
+        <li><a href="">Coleção</a>
+        </li>
+      </ul>
+
+      <p id="camisa-title">Camisetas</p>
+      <ul>
+        <li>
+          <a href="">Oversized</a>
+        </li>
+        <li>
+          <a href="">Slim
+          </a>
+        </li>
+        <li>
+          <a href="">Camiseta 3</a>
+        </li>
+      </ul>
+      <p id="calca-title">Calças</p>
+      <ul>
+        <li><a href="">Baggy</a>
+        </li>
+      </ul>
+      <a href="" id="moletom-nav">Moletom</a>
+
+      <a href="" id="bermuda-nav">Bermudas</a>
+    </div>
+  </section>
+
+  <div id="overlayprodutos" class="overlayprod" onclick="fecharProdutos()"></div>
+
+  <!--Seção do banner -->
+
+  <section class="banner">
+    <div class="banner-content">
+      <h2>DROP</h2>
+      <p>Disponível agora</p>
+      <a href="#produtos-novidades" class="btn">CONFIRA AS NOVIDADES</a>
+    </div>
+  </section>
+
+  <!--Seção de avisos-->
+
+  <!--Seção de destaques-->
+
+  <section class="section-destaques" id="produtos-novidades">
+    <h2 id="h2nov">Novidades</h2>
+
+    <div class="produtos-container" id="">
+
+      <!-- Produto 1 -->
+      <div class="produto">
+        <img src="../imagens/produto1img.png" alt="" id="produto1img" class="img.produto">
+        <h3>Camiseta Branca</h3>
+  
+
+      </div>
+
+      <!-- Produto 2 -->
+      <div class="produto">
+        <img src="../imagens/produto1img.png" alt="" id="produto2img" class="img.produto">
+        <h3>Camiseta Branca</h3>
+
+      </div>
+
+      <!-- Produto 3 -->
+      <div class="produto">
+        <img src="../imagens/produto1img.png" alt="" id="produto3img" class="img.produto">
+        <h3>Camiseta Branca</h3>
+
+      </div>
+
+
+    </div>
+  </section>
+
+  <!--Seção destaque abaixo-->
+
+  <section class="section-destaques_abaixo">
+
+    <div class="produtos-container">
+
+      <!-- Produto 1 -->
+      <div class="produto">
+        <img src="../imagens/produto1img.png" alt="" id="produto1img" class="img.produto">
+        <h3>Camiseta Branca</h3>
+
+
+      </div>
+
+      <!-- Produto 2 -->
+      <div class="produto">
+        <img src="../imagens/produto1img.png" alt="" id="produto2img" class="img.produto">
+        <h3>Camiseta Branca</h3>
+
+      </div>
+
+      <!-- Produto 3 -->
+      <div class="produto">
+        <img src="../imagens/produto1img.png" alt="" id="produto3img" class="img.produto">
+        <h3>Camiseta Branca</h3>
+
+
+      </div>
+      <div class="produto">
+        <img src="../imagens/produto1img.png" alt="" id="produto3img" class="img.produto">
+        <h3>Camiseta Branca</h3>
+  
+
+      </div>
+
+    </div>
+  </section>
+
+  <!-- Footer -->
+
+  <footer class="footer">
+    <div class="footer-container">
+      <!-- Coluna 1 Esquerda -->
+      <div class="footer-column-left">
+        <p><strong>Atendimento</strong></p>
+        <hr/>
+        <p><strong>Newsletter</strong></p>
+        <form class="newsletter-form">
+          <input type="email" placeholder="E-mail" />
+          <button type="submit">→</button>
+        </form>
+      </div>
+<div>
+</div>
+      <!-- Coluna 2 centro -->
+      <div class="footer-column center">
+        <h1 class="logo2">Kicks
+          Company
+        </h1>
+        <a href="#" class="insta-icon"><i class="fab fa-instagram"></i></a>
+      </div>
+
+      <!-- Coluna 3 direita -->
+      <div class="footer-column-right">
+        <p><strong>Kicks Company, AUTORAL © 2025</strong></p>
+        <p>CNPJ: XX.XXX.XXX/XXXX-XX </p>
+        <p><strong>São Paulo - SP/</strong>
+        <p>
+      </div>
+    </div>
+    <p class="footer-autoral">Kicks Company - Tecnologia em roupas</p>
+  </footer>
+
+  <script>
+
+    //script do carrinho
+
+
+    // Adicionar classes para visivel e fechado (Carrinho)
+    function abrirCarrinho() {
+      document.getElementById('carrinho').classList.add('aberto');
+      document.getElementById('overlay').classList.add('visivel');
+    }
+
+    function fecharCarrinho() {
+
+      document.getElementById('carrinho').classList.remove('aberto');
+      document.getElementById('overlay').classList.remove('visivel');
+    }
+    //Script da nav produtos
+
+    function abrirProdutos() {
+      document.getElementById('produtos-nav').classList.add('aberto');
+      document.getElementById('overlayprod').classList.add('visivel');
+    }
+
+    function fecharProdutos() {
+      document.getElementById('produtos-nav').classList.remove('aberto');
+      document.getElementById('overlayprod').classList.remove('visivel');
+    }
+
+
+document.getElementById('produtos-nav1').addEventListener('click', function(e) {
+  e.preventDefault(); 
+  abrirProdutos();    
+});
+    
+
+    document.querySelector('.search-toggle').addEventListener('click', function (f) {
+    f.preventDefault();
+      const searchInput = document.querySelector('.search-input');
+      searchInput.classList.toggle('ativo');
+
+      // Foca no input quando ativado
+      if (searchInput.classList.contains('ativo')) {
+        searchInput.focus();
+      }
+    });
+
+    // Fechar ao clicar fora
+   
+
+    // Fechar ao pressionar ESC
+    document.addEventListener('keyup', function (esc) {
+      if (esc.key === 'Escape') {
+        document.querySelector('.search-input').classList.remove('ativo');
+        document.getElementById('carrinho').classList.remove('aberto');
+        document.getElementById('overlay').classList.remove('visivel');
+              document.getElementById('produtos-nav').classList.remove('aberto');
+      document.getElementById('overlayprod').classList.remove('visivel');
+      }
+    });
+
+  </script>
+  
+</body>
+
+</html>
+</body>
+
+</html>
