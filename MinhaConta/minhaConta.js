@@ -1,16 +1,3 @@
-function toggleAccordion() {
-  const content = document.getElementById("accordion-content");
-  
-  if (content.style.display === "none") {
-    content.style.display = "block";
-  } else {
-    content.style.display = "none";
-  }
-
-  content.classList.toggle("aberto");
-  const content2 = document.getElementsByClassName("coluna-esquerda");
-  content2.classList.toggle("aberto");
-}
 
 
 
