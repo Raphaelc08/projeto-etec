@@ -1,157 +1,163 @@
-  <!DOCTYPE html>
-  <html lang="pt-BR">
+<!DOCTYPE html>
+<html lang="pt-BR">
 
-  <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="telaProduto.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
-    <!--Importando Font Awesome para logos-->
-    <title>Kicks Company</title>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="telaProduto.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <!--Importando Font Awesome para logos-->
+  <title>Kicks Company</title>
 
-  </head>
+</head>
 
-  <body>
+<body>
 
   <header id="header">
-      <div class="nav-left">
-        <ul>
-          <li class="dropdown">
-            <a href="#" id="produtos-nav1" onclick="abrirProdutos()">Produtos</a>
-          </li>
-        </ul>
-      </div>
-      <div class="logo" id="nav-center">
-        <a href="../PaginaPrinc/indexpaginaprinc.html" id="h1head" class="logo"><img src="/imagens/Cópia de kicks.svg" alt=""></a>
-      </div>
+    <div class="nav-left">
+      <ul>
+        <li class="dropdown">
+          <a href="#" id="produtos-nav1" onclick="abrirProdutos()">Produtos</a>
+        </li>
+      </ul>
+    </div>
+    <div class="logo" id="nav-center">
+      <a href="../PaginaPrinc/indexpaginaprinc.html" id="h1head" class="logo"><img src="/imagens/Cópia de kicks.svg"
+          alt=""></a>
+    </div>
 
-      <div class="nav-right">
-        <ul>
-          <li class="search-container">
-            <div class="search-box">
-              <a href="#" class="search-toggle"><i class="fas fa-search"></i></a>
-              <input type="text" class="search-input" placeholder="Pesquisar...">
-            </div>
-          </li>
-          <li>
-              <a href="../MinhaConta/minhaconta.html"><i class="fas fa-user"></i></a>
-            </li>
-          <li>
-            <a href="#" id="abrircar" onclick="abrirCarrinho()"><i class="fas fa-shopping-cart"></i></a>
-          </li>
-        </ul>
-      </div>
-    </header>
-
-
-
-    <!-- Carrinho -->
+    <div class="nav-right">
+      <ul>
+        <li class="search-container">
+          <div class="search-box">
+            <a href="#" class="search-toggle"><i class="fas fa-search"></i></a>
+            <input type="text" class="search-input" placeholder="Pesquisar...">
+          </div>
+        </li>
+        <li>
+          <a href="../MinhaConta/minhaconta.html"><i class="fas fa-user"></i></a>
+        </li>
+        <li>
+          <a href="#" id="abrircar" onclick="abrirCarrinho()"><i class="fas fa-shopping-cart"></i></a>
+        </li>
+      </ul>
+    </div>
+  </header>
 
 
-    <section id="carrinho" class="carrinho">
-      <button class="fecharcarrinho" onclick="fecharCarrinho()">✖</button>
-      <h2>Carrinho</h2>
 
-      <button id="button-finalizarCarrinho">Finalizar pedido</button>
-    </section>
-    <div id="overlay" class="overlay" onclick="fecharCarrinho()"></div>
+  <!-- Carrinho -->
 
-    <!-- Produtos nav aberta-->
 
-    <section id="produtos-nav" class="produtos-navv">
-      <button class="fecharprodutos" onclick="fecharProdutos()">✖</button>
-      <h2>Produtos</h2>
-      <hr>
-      </hr>
-      <div class="menu-esquerda">
-        <p id="col-title">Lançamento Coleções</p>
-        <ul>
-          <li><a href="">Coleção</a>
-          </li>
-          <li><a href="">Coleção</a>
-          </li>
-          <li><a href="">Coleção</a>
-          </li>
-        </ul>
+  <section id="carrinho" class="carrinho">
+    <button class="fecharcarrinho" onclick="fecharCarrinho()">✖</button>
+    <h2>Carrinho</h2>
 
-        <p id="camisa-title">Camisetas</p>
-        <ul>
-          <li>
-            <a href="">Oversized</a>
-          </li>
-          <li>
-            <a href="">Slim
-            </a>
-          </li>
-          <li>
-            <a href="">Camiseta 3</a>
-          </li>
-        </ul>
-        <p id="calca-title">Calças</p>
-        <ul>
-          <li><a href="">Baggy</a>
-          </li>
-        </ul>
-        <a href="" id="moletom-nav">Moletom</a>
+    <button id="button-finalizarCarrinho">Finalizar pedido</button>
+  </section>
+  <div id="overlay" class="overlay" onclick="fecharCarrinho()"></div>
 
-        <a href="" id="bermuda-nav">Bermudas</a>
-      </div>
-    </section>
+  <!-- Produtos nav aberta-->
 
-    <div id="overlayprodutos" class="overlayprod" onclick="fecharProdutos()"></div>
+  <section id="produtos-nav" class="produtos-navv">
+    <button class="fecharprodutos" onclick="fecharProdutos()">✖</button>
+    <h2>Produtos</h2>
+    <hr>
+    </hr>
+    <div class="menu-esquerda">
+      <p id="col-title">Lançamento Coleções</p>
+      <ul>
+        <li><a href="">Coleção</a>
+        </li>
+        <li><a href="">Coleção</a>
+        </li>
+        <li><a href="">Coleção</a>
+        </li>
+      </ul>
+
+      <p id="camisa-title">Camisetas</p>
+      <ul>
+        <li>
+          <a href="">Oversized</a>
+        </li>
+        <li>
+          <a href="">Slim
+          </a>
+        </li>
+        <li>
+          <a href="">Camiseta 3</a>
+        </li>
+      </ul>
+      <p id="calca-title">Calças</p>
+      <ul>
+        <li><a href="">Baggy</a>
+        </li>
+      </ul>
+      <a href="" id="moletom-nav">Moletom</a>
+
+      <a href="" id="bermuda-nav">Bermudas</a>
+    </div>
+  </section>
+
+  <div id="overlayprodutos" class="overlayprod" onclick="fecharProdutos()"></div>
 
   <div class="container-produto">
-  <section class="produto">
-    <div class="miniaturas">
-      <img src="../imagens/produto5img.png" alt="">
-      <img src="../imagens/produto4img.png" alt="">
-      <img src="../imagens/produto4img.png" alt="">
-    </div>
-    <img src="../imagens/produto2img.png" alt="" class="imgprincipal">
-  </section>
+    <section class="produto">
+      <div class="miniaturas">
+        <img src="../imagens/produto5img.png" alt="">
+        <img src="../imagens/produto4img.png" alt="">
+        <img src="../imagens/produto4img.png" alt="">
+      </div>
+      <img src="../imagens/produto2img.png" alt="" class="imgprincipal">
+    </section>
 
-  <section class="desc-produto">
-  <h1>Title</h1>
-  <p><b>R$ XXX,XX</b></p>
-  <p>ou em até 3x de R$ XX,XX</p>
-  <div class="descricao">
-  <p>CAMISETA BORDADA</p>
-  <p>100% ALGODÃO</p>
-  <p>FEITO NO BRASIL</p>
+    <section class="desc-produto">
+      <h1>Title</h1>
+      <p><b>R$ XXX,XX</b></p>
+      <p>ou em até 3x de R$ XX,XX</p>
+      <div class="descricao">
+        <p>CAMISETA BORDADA</p>
+        <p>100% ALGODÃO</p>
+        <p>FEITO NO BRASIL</p>
+      </div>
+      <form action="#" method="get">
+        <div class="compra">
+          <p>Tamanhos:</p>
+          <div class="tamanhos">
+            <input type="radio" name="tamanho" id="tam-p" value="P">
+            <label for="tam-p">P</label>
+
+            <input type="radio" name="tamanho" id="tam-m" value="M">
+            <label for="tam-m">M</label>
+
+            <input type="radio" name="tamanho" id="tam-g" value="G">
+            <label for="tam-g">G</label>
+
+            <input type="radio" name="tamanho" id="tam-gg" value="GG">
+            <label for="tam-gg">GG</label>
+          </div>
+        </div>
+
+        <div class="compra-container"><!-- Novo container que envolve ambos -->
+
+          <div class="quantity-box">
+            <span class="menos">-</span>
+            <input type="text" name="quantity" value="1" maxlength="2">
+            <span class="mais">+</span>
+          </div>
+
+          <div class="submit-button">
+            <button type="submit"><span>Comprar</span></button>
+          </div>
+
+        </div>
+      </form>
+    </section>
   </div>
- <div class="compra">
-  <p>Tamanhos:</p>
-  <div class="tamanhos">
-    <input type="radio" name="tamanho" id="tam-p" value="P">
-    <label for="tam-p">P</label>
-
-    <input type="radio" name="tamanho" id="tam-m" value="M">
-    <label for="tam-m">M</label>
-
-    <input type="radio" name="tamanho" id="tam-g" value="G">
-    <label for="tam-g">G</label>
-
-    <input type="radio" name="tamanho" id="tam-gg" value="GG">
-    <label for="tam-gg">GG</label>
-  </div>
-</div>
-<div class="compra-container"> <!-- Novo container que envolve ambos -->
-  <div class="quantity-box">
-    <span class="menos">-</span>
-    <input type="text" name="quantity" value="1" maxlength="2">
-    <span class="mais">+</span>
-  </div>
-  
-  <div class="submit-button">
-    <button type="submit"><span>Comprar</span></button>
-  </div>
-</div>
-  </section>
-  </div>
 
 
-        <!-- Footer -->
+  <!-- Footer -->
 
   <footer class="footer">
     <div class="footer-container">
@@ -181,10 +187,11 @@
       </div>
     </div>
 
-    
+
   </footer>
 
   <script src="../JS/framework.js"></script>
-        <script src="telaProduto.js"></script>
-  </body>
-  </html>
+  <script src="telaProduto.js"></script>
+</body>
+
+</html>

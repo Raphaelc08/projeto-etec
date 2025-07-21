@@ -239,6 +239,12 @@ width: 120px;
   color: #eee9e9;
   margin-left: 20px ;
 }
+.menu-esquerda ul li a:hover {
+    transition: 0.7s;
+  font-weight: bold;
+  color: #da0909;
+  text-decoration: underline;
+} 
 .menu-esquerda {
   height: 91%;
 width: 370px;
@@ -333,7 +339,7 @@ bottom: 20px;
 
 .banner {
 
-    background-image: url('../imagens/banner-Photoroom\ 1.png'); /* banner de imagem: 1900x900 */
+    background-image: url('../imagens/Design\ sem\ nome.png'); /* banner de imagem: 1900x900 */
     background-size: cover;
     background-position: center;
     height: 100vh;
@@ -365,7 +371,7 @@ bottom: 20px;
 
 .btn:hover {
   transition: 0.8s;
-  border: 1px solid #F2F2F2;
+  border: 2px solid #1b0101;
 }
 /* Fim do banner */
 
@@ -377,8 +383,7 @@ bottom: 20px;
   align-items: center;
   justify-content: center;
   text-align: center;
-  position: relative;
-
+ 
 }
 .section-destaques h2 {
   font-family: 'Montserrat', 'sans-serif';
@@ -389,10 +394,11 @@ bottom: 20px;
 /* Estilo base para os produtos */
 .produtos-container {
   display: flex;
-  flex-wrap: wrap;
+  flex-wrap:  wrap;
   justify-content: center;
-  gap: 20px;
+  gap: 7px;
   padding: 20px;
+  align-items: flex-start;
   box-sizing: border-box;
 }
 
@@ -407,22 +413,33 @@ bottom: 20px;
 }
 
 .produto {
-  background-color: none;
+    background-color: none;
   padding: 30px;
 cursor: pointer;
   text-align: center;
   box-shadow: 2px 0 10px rgba(0,0,0,0.3);
 }
-.produto:hover {
-  transform: scale(1.02);
-  transition: 0.5s ease;
+
+.produto2 {
+height: 800px;
+}
+.prod {
+  gap: 20px;
+}
+.prod:hover {
+  transform: scale(1.03);
+  transition: 0.3s;
+  transition-delay: 0.1s;
 }
 .produto img {
   width: 100%;
   height: auto;
   object-fit: cover;
 }
+#produto2 {
+  height: 900px;
 
+}
 
 
 
@@ -463,6 +480,7 @@ padding: 5px;
 .footer-column.center { 
   justify-content: center;
   text-align: center;
+
 }
 .footer-column-right {
     position: absolute;
@@ -480,7 +498,7 @@ padding: 5px;
 .insta-icon {
   font-size: 30px;
   display: inline-block;
-  margin-left: 20px;
+  margin-left: 3%;
   color: #fff;
   text-decoration: none;
 }
@@ -488,8 +506,9 @@ padding: 5px;
 .footer-autoral {
   text-decoration: none;
   text-align: center;
-  margin-top: 20px;
-  margin-left: 10px;
+
+   margin: 0 auto;
+   margin-top: 10px;
   font-size: 14px;
   color: #aaa;
 }

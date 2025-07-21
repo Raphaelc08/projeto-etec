@@ -242,6 +242,12 @@ width: 120px;
   color: #eee9e9;
   margin-left: 20px ;
 }
+.menu-esquerda ul li a:hover {
+    transition: 0.7s;
+  font-weight: bold;
+  color: #da0909;
+  text-decoration: underline;
+} 
 button[type="submit"] {
   cursor: pointer;
 }
