@@ -8,8 +8,9 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
   <!--Importando Font Awesome para logos-->
-  <title>Kicks Company</title>
 
+  <title>Kicks Company</title>
+  
 </head>
 
 <body>
@@ -18,13 +19,12 @@
     <div class="nav-left">
       <ul>
         <li class="dropdown">
-          <a href="#" id="produtos-nav1" onclick="abrirProdutos()">Produtos</a>
+          <a href="#" id="produtos-nav1">Produtos</a>
         </li>
       </ul>
     </div>
     <div class="logo" id="nav-center">
-      <a href="../PaginaPrinc/paginaPrinc.html" id="h1head" class="logo"><img src="/imagens/Cópia de kicks.svg"
-          alt=""></a>
+      <a href="../PaginaPrinc/paginaPrinc.html" id="h1head" class="logo"><img src="../imagens/Cópia de kicks.svg" alt=""></a>
     </div>
 
     <div class="nav-right">
@@ -36,35 +36,34 @@
           </div>
         </li>
         <li>
-          <a href="../MinhaConta/minhaconta.html"><i class="fas fa-user"></i></a>
-        </li>
+            <a href="../MinhaConta/minhaconta.html"><i class="fas fa-user"></i></a>
+          </li>
         <li>
-          <a href="#" id="abrircar" onclick="abrirCarrinho()"><i class="fas fa-shopping-cart"></i></a>
+          <a href="#" id="abrircar"><i class="fas fa-shopping-cart"></i></a>
         </li>
       </ul>
     </div>
   </header>
 
-
-
   <!-- Carrinho -->
 
 
   <section id="carrinho" class="carrinho">
-    <button class="fecharcarrinho" onclick="fecharCarrinho()">✖</button>
+    <button class="fecharcarrinho">✖</button>
     <h2>Carrinho</h2>
 
     <button id="button-finalizarCarrinho">Finalizar pedido</button>
   </section>
-  <div id="overlay" class="overlay" onclick="fecharCarrinho()"></div>
+  <div id="overlay" class="overlay"></div>
 
   <!-- Produtos nav aberta-->
 
   <section id="produtos-nav" class="produtos-navv">
-    <button class="fecharprodutos" onclick="fecharProdutos()">✖</button>
+    <button class="fecharprodutos">✖</button>
+    <a href="" id="a-line"></a>
     <h2>Produtos</h2>
     <hr>
-
+    </hr>
     <div class="menu-esquerda">
       <p id="col-title">Lançamento Coleções</p>
       <ul>
@@ -100,7 +99,9 @@
     </div>
   </section>
 
-  <div id="overlayprodutos" class="overlayprod" onclick="fecharProdutos()"></div>
+  <div id="overlayprodutos" class="overlayprod"></div>
+
+
 
 
   <div class="containerr">

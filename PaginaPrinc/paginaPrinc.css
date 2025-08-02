@@ -25,9 +25,9 @@ body {
 }
 
 header {
-  position: fixed; /* Fixa o header no topo */
+  position: fixed; 
   width: 100%;
-  z-index: 1000; /* Garante que fique por cima */
+  z-index: 2; 
   display: flex;
   justify-content: center;
   align-items: center;
