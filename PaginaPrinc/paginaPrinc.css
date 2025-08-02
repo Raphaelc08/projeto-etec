@@ -418,13 +418,11 @@ bottom: 20px;
 cursor: pointer;
   text-align: center;
   box-shadow: 2px 0 10px rgba(0,0,0,0.3);
+  gap: 30px;
 }
 
-.produto2 {
-height: 800px;
-}
 .prod {
-  gap: 20px;
+  gap: 30px;
 }
 .prod:hover {
   transform: scale(1.03);
@@ -436,12 +434,41 @@ height: 800px;
   height: auto;
   object-fit: cover;
 }
-#produto2 {
-  height: 900px;
 
+
+
+
+.section-destaques_abaixo button img {
+  width: 40px;
+}
+ 
+#prev {
+  cursor: pointer;
+  border: none;
+  background : none;
+    transform: rotate(180deg);
+        position: absolute;
+        top: 210%;
+        left: 4%;
+}
+ #next {
+    cursor: pointer;
+  border: none;
+  background : none;
+           position: absolute;
+        top: 210%;
+        right: 4%; 
 }
 
-
+.produto.prod {
+  opacity: 0;
+  display: none; 
+}
+.produto.prod.active {
+display: block;
+            transition: 0.5s;
+            opacity: 1;
+}
 
 /* Footer */
 
