@@ -71,9 +71,9 @@ margin-right: 9px;
   padding: 0;
   font-size: 20px;
 }
-.nav-right a {
-  color: #111;
-  text-decoration: none;
+.nav-right ul li a img {
+width: 25px;
+height: 25px;
 }
 
 
