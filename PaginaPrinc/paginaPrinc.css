@@ -353,7 +353,7 @@ bottom: 20px;
 
 .banner {
 
-    background-image: url('../imagens/bannernovo02.png'); /* banner de imagem: 1900x900 */
+    background-image: url('../imagens/Cópia\ de\ KICKS\ COMPANY\ \(2\).png'); /* banner de imagem: 1900x900 */
     background-size: cover;
     background-position: center;
     height: 100vh;
@@ -378,7 +378,7 @@ bottom: 20px;
     margin-top: 10px;
     padding: 10px 25px;
     background-color: transparent;
-    border: 2px solid #8B0000;
+    border: 2px solid#8B0000;
     text-decoration: none;
     border-radius: 5px;
 }
@@ -394,7 +394,7 @@ bottom: 20px;
 .section-destaques {
   background: linear-gradient(90deg, var(--body-color), #bbbbbb );
   display: block;
-  align-items: center;
+  align-items: center; 
   justify-content: center;
   text-align: center;
  
