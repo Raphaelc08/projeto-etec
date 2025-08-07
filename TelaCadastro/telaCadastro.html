@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="TelaCadastro.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <title>Kicks Company</title>
+</head>
+<body>
+    <header id="header">
+        <div class="nav-left">
+          <ul>
+            <li class="dropdown">
+              <a href="#" id="produtos-nav1">Produtos</a>
+            </li>
+          </ul>
+        </div>
+        <div class="logo" id="nav-center">
+          <a href="../PaginaPrinc/paginaPrinc.html" id="h1head" class="logo"><img src="../imagens/Cópia de kicks.svg" alt=""></a>
+        </div>
+    
+        <div class="nav-right">
+          <ul>
+            <li class="search-container">
+              <div class="search-box">
+                <a href="#" class="search-toggle"><img src="/imagens/IconSearch.png" alt=""></a>
+                <input type="text" class="search-input" placeholder="Pesquisar...">
+              </div>
+            </li>
+            <li>
+                <a href="../MinhaConta/minhaconta.html" id="abrirUser"><img src="/imagens/IconUser.png" alt=""></a>
+              </li>
+            <li>
+              <a href="#" id="abrircar"><img src="/imagens/IconCar.png" alt=""></a>
+            </li>
+          </ul>
+        </div>
+      </header>
+    
+      <!-- Carrinho -->
+    
+    
+      <section id="carrinho" class="carrinho">
+        <button class="fecharcarrinho">✖</button>
+        <h2>Carrinho</h2>
+    
+        <button id="button-finalizarCarrinho">Finalizar pedido</button>
+      </section>
+      <div id="overlay" class="overlay"></div>
+    
+      <!-- Produtos nav aberta-->
+    
+      <section id="produtos-nav" class="produtos-navv">
+        <button class="fecharprodutos">✖</button>
+        <a href="" id="a-line"></a>
+        <h2>Produtos</h2>
+        <hr>
+        </hr>
+        <div class="menu-esquerda">
+          <p id="col-title">Lançamento Coleções</p>
+          <ul>
+            <li><a href="">Coleção</a>
+            </li>
+            <li><a href="">Coleção</a>
+            </li>
+            <li><a href="">Coleção</a>
+            </li>
+          </ul>
+    
+          <p id="camisa-title">Camisetas</p>
+          <ul>
+            <li>
+              <a href="">Oversized</a>
+            </li>
+            <li>
+              <a href="">Slim
+              </a>
+            </li>
+            <li>
+              <a href="">Camiseta 3</a>
+            </li>
+          </ul>
+          <p id="calca-title">Calças</p>
+          <ul>
+            <li><a href="">Baggy</a>
+            </li>
+          </ul>
+          <a href="" id="moletom-nav">Moletom</a>
+    
+          <a href="" id="bermuda-nav">Bermudas</a>
+        </div>
+      </section>
+    
+      <div id="overlayprodutos" class="overlayprod"></div>
+
+      <main>
+
+        <main>
+          <div class="form-container">
+            <h1 class="cadastre-title"> Cadastre-se Aqui </h1>
+            <h2 class="criar-title"> Criar conta</h2>
+      
+            <form action="">
+              <label for=""> Nome: </label>
+              <input type="text" name="nome" required placeholder="Digite seu nome">
+    
+              <label for="" > Sobrenome: </label>
+              <input type="text" name="surname" required placeholder="Digite seu sobrenome" class="sobrenome">
+    
+              <label for=""> Email:</label>
+              <input type="email" name="Email" id="" required placeholder="Digite seu E-mail">
+    
+              <label for=""> Senha: </label>
+              <input type="password" name="pass" id="pass" required placeholder="Crie uma senha">
+    
+              <label for=""> Confirmar senha: </label>
+              <input type="password" name="confirm-pass" required placeholder="Confirme sua senha"> <br> <br>
+    
+              <button type="submit"> CADASTRAR </button>
+    
+              
+    
+    
+            </form>
+          </div>
+        </main>
+    
+        
+
+      </main>
+    
+
+       <!-- Footer -->
+
+  <footer class="footer">
+    <div class="footer-container">
+      <!-- Coluna 1 Esquerda -->
+      <div class="footer-column-left">
+        <p><strong>Atendimento</strong></p>
+        <hr/>
+        <p><strong>Newsletter</strong></p>
+        <form class="newsletter-form">
+          <input type="email" placeholder="E-mail" />
+          <button type="submit">→</button>
+        </form>
+      </div>
+<div>
+</div>
+      <!-- Coluna 2 centro -->
+      <div class="footer-column center">
+        <h1 class="logo2">Kicks
+          Company
+        </h1>
+        <a href="#" class="insta-icon"><i class="fab fa-instagram"></i></a>
+      </div>
+
+      <!-- Coluna 3 direita -->
+      <div class="footer-column-right">
+        <p><strong>Kicks Company, AUTORAL © 2025</strong></p>
+        <p>CNPJ: XX.XXX.XXX/XXXX-XX </p>
+        <p><strong>São Paulo - SP/</strong>
+        <p>
+      </div>
+    </div>
+    <p class="footer-autoral">Kicks Company - Tecnologia em roupas</p>
+  </footer>
+  <script src="../JS/framework.js"></script>
+  <script src="paginaPrinc.js"></script>
+    
+</body>
+</html>
