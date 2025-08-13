@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
-
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,14 +7,11 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
   <!--Importando Font Awesome para logos-->
-
   <title>Kicks Company</title>
-  
+
 </head>
-
 <body>
-
-  <header id="header">
+     <header id="header">
     <div class="nav-left">
       <ul>
         <li class="dropdown">
@@ -101,7 +97,6 @@
 
   <div id="overlayprodutos" class="overlayprod"></div>
 
-
   <!-- Tela login-->
 
     <div class="tela-container">
@@ -111,17 +106,22 @@
         <form action="">
             <div>
             <label for="">Login</label>
-            <input type="text" name="login">
+            <input type="text" name="login" placeholder="Login" required> 
             </div>
             <div>
             <label for="" name="pass">Senha</label>
-            <input type="password">
+            <input type="password" placeholder="Password" required>
             </div>
-            <a href="#">Esqueci minha senha</a>
-            <div>
+            <a href="/recuperarSenha/index.html">Esqueci minha senha</a> 
+            <div> <br>
             <button type="submit" name="Entrada" id="submit-entrar">ENTRAR</button>
+            </div> 
+            <button type="submit" id="email-entrar">Entrar com email</button> 
+            <br>
+            <div class="link-cadastro">
+            <p> Ainda não tem conta? </p> 
+            <a href="../TelaCadastro/telaCadastro.html"> Cadastre-se </a>
             </div>
-            <button type="submit" id="email-entrar">Entrar com email</button>
         </form>
         </div>
     </div>
@@ -143,20 +143,73 @@
 
       <!-- Coluna 2 centro -->
       <div class="footer-column center">
-        <h1 class="logo2">Step Over</h1>
+        <h1 class="logo2">Kicks Company</h1>
         <a href="#" class="insta-icon"><i class="fab fa-instagram"></i></a>
       </div>
 
       <!-- Coluna 3 direita -->
       <div class="footer-column-right">
-        <p><strong>STEP OVER, AUTORAL © 2025</strong></p>
+        <p><strong>KICKS COMPANY, AUTORAL © 2025</strong></p>
         <p>CNPJ: XX.XXX.XXX/XXXX-XX </p>
         <p><strong>São Paulo - SP/</strong>
         <p>
       </div>
     </div>
-    <p class="footer-autoral">Step Over - Tecnologia em roupas</p>
+    <p class="footer-autoral">Kicks Company - Tecnologia em roupas</p>
   </footer>
-    <script src="../JS/framework.js"></script>
+    <script>
+    function abrirCarrinho() {
+      document.getElementById('carrinho').classList.add('aberto');
+      document.getElementById('overlay').classList.add('visivel');
+    }
+
+    function fecharCarrinho() {
+
+      document.getElementById('carrinho').classList.remove('aberto');
+      document.getElementById('overlay').classList.remove('visivel');
+
+    }
+    //Script da nav produtos
+
+    function abrirProdutos() {
+      document.getElementById('produtos-nav').classList.add('aberto');
+      document.getElementById('overlayprod').classList.add('visivel');
+    }
+    function fecharProdutos() {
+      document.getElementById('produtos-nav').classList.remove('aberto');
+      document.getElementById('overlayprod').classList.remove('visivel');
+    }
+
+
+// pega e adiciona o ativo
+  
+document.querySelector('.search-toggle').addEventListener('click', function(e) {
+  e.preventDefault();
+  const searchInput = document.querySelector('.search-input');
+  searchInput.classList.toggle('ativo');
+  
+  // Foca no input quando ativado
+  if(searchInput.classList.contains('ativo')) {
+    searchInput.focus();
+  }
+});
+
+// Fechar ao clicar fora
+document.addEventListener('click', function(e) {
+  const searchBox = document.querySelector('.search-box');
+  const searchInput = document.querySelector('.search-input');
+  
+  if(!searchBox.contains(e.target)) {
+    searchInput.classList.remove('ativo');
+  }
+});
+
+// Fechar ao pressionar ESC
+document.addEventListener('keyup', function(e) {
+  if(e.key === 'Escape') {
+    document.querySelector('.search-input').classList.remove('ativo');
+  }
+});
+    </script>
 </body>
 </html>
